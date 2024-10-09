@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    /* Dark background */
+    color: #f4f4f4;
+    /* Light text color */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #ffffff;
+    /* White color for the heading */
+}
+
+.manhwa-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.manhwa-card {
+    background-color: #2a2a2a;
+    /* Darker card background */
+    border: 1px solid #444;
+    /* Slightly lighter border */
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    /* Fixed width for the card */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    /* Lighter shadow for contrast */
+}
+
+.manhwa-card img {
+    width: 200px;
+    /* Set a fixed width for the image */
+    height: 300px;
+    /* Set a fixed height for the image */
+    object-fit: cover;
+    /* Ensure the image fills the area without distorting */
+    border-radius: 8px 8px 0 0;
+    /* Optional: round the top corners */
+}
+
+.manhwa-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffffff;
+    /* White color for card titles */
+}
+
+.manhwa-card p {
+    margin: 5px 0;
+    color: #cccccc;
+    /* Light gray color for card text */
+}

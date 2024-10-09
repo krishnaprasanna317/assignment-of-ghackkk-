@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Ensure this path is correct -->
+    <title>Fantasy Manhwa List</title>
+</head>
+
+<body>
+    <h1>Fantasy Manhwa List</h1>
+    <div class="manhwa-container">
+        <% manhwaList.forEach(manhwa=> { %>
+            <div class="manhwa-card">
+                <img src="<%= manhwa.image_url %>" alt="<%= manhwa.title %>">
+                <h2>
+                    <%= manhwa.title %>
+                </h2>
+                <p><strong>Genre:</strong>
+                    <%= manhwa.genre %>
+                </p>
+                <p>
+                    <%= manhwa.description %>
+                </p>
+            </div>
+            <% }); %>
+    </div>
+</body>
+
+</html>
